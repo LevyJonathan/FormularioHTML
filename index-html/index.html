@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    img{
+        width: 50px;
+    }
+    body{
+        background-color: cornflowerblue;
+        color: azure;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: hsl(224, 87%, 21%);
+        font-size: 50px;
+        color: white;
+    }
+    .texto{
+        font-family: 'Gill Sans';
+        font-size: medium;
+        color:white;
+    }
+    #botao{
+        display: flex;
+        justify-content: center;
+
+    }
+
+</style>
+    <head>
+        <meta charset="utf-8">
+        <title>formulario</title>
+    </head>
+<body>
+    <h1>Cadastro de usuários</h1>
+    <img src="/imagens/instagram-3814049_1280.png"
+    <div id="cabecalho">
+        <fieldset>
+            <label> Digite seu email
+                <input type="email" name="email" id="email">
+            </label>
+            <br>
+            <label > Digite seu nome
+                <input type="text" name="nome" id="nome">
+            </label> 
+            <br>
+            <label> Digite seu Sobrenome 
+                <input type="text" name="sobrenome" id="sobrenome">
+            </label>
+            <br>
+            <p>Qual o seu gênero?</p>
+            <label> masculino
+                <input type="radio" name="genero" value="masculino">
+            </label>
+            <label> feminino
+                <input type="radio" name="genero" value="feminino">
+            </label>
+            <label> outro
+                <input type="radio" name="genero" value="outro">
+            </label>
+        </fieldset>
+        <div id="botao">
+        <p class=".texto">Caso já tenha preenchido todas informações clique no botão abaixo</p>
+        <button class="botao1" onclick="botaoEnviar()">Enviar</button>
+        </div>
+    </div>
+
+<script>
+    function botaoEnviar (){ window.alert("Seu formulario foi enviado com sucesso")}
+</script>
+
+</body>
+</html>
